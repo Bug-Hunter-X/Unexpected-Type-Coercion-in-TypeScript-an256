@@ -1,0 +1,5 @@
+# Unexpected Type Coercion in TypeScript
+
+This repository demonstrates a subtle issue in TypeScript's type system where implicit type coercion can lead to unexpected results without type errors. The `add` function is defined to take two numbers as arguments and return a number. However, when calling the function with a number and a string, TypeScript does not throw a type error, but instead performs string concatenation, which is not the intended behavior.
+
+This issue highlights a potential pitfall in relying solely on TypeScript's type system for error prevention, especially when dealing with implicit type coercion. While this implicit behavior might sometimes be desirable, it is crucial to be aware of its limitations and potential for unexpected outcomes. This example serves as a reminder to always thoroughly test your code and be mindful of TypeScript's implicit type conversion mechanisms.
